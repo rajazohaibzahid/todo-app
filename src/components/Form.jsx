@@ -29,7 +29,7 @@ export default function Form({ onAddItems }) {
       </select>
       <input
         type="text"
-        placeholder="Item..."
+        placeholder="Add your item..."
         value={description}
         onChange={(e) => setDescription(e.target.value)}
       />
