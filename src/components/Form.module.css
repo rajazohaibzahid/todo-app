@@ -6,8 +6,6 @@
   padding: 3rem 1rem;
 }
 
-/* main form row */
-
 .addForm {
   display: flex;
   align-items: center;
@@ -53,4 +51,18 @@
   background-color: #14b8a6;
   border: none;
   color: #020617;
+}
+
+@media (max-width: 480px) {
+  .addForm {
+    flex-direction: column;
+    align-items: stretch;
+    width: 90%;
+  }
+
+  .addForm input,
+  .addForm select,
+  .addForm button {
+    width: 100%;
+  }
 }

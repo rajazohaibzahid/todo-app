@@ -8,10 +8,6 @@ export default function Product() {
       <PageNav />
       <main className={styles.product}>
         <section>
-          <img
-            src="coding.jpg"
-            alt="person with dog overlooking mountain with sunset"
-          />
           <div>
             <h2>Everything You Need to Manage Your Packing List</h2>
             <p>
@@ -24,6 +20,10 @@ export default function Product() {
               simplicity, and a seamless user experience.
             </p>
           </div>
+          <img
+            src="coding.jpg"
+            alt="person with dog overlooking mountain with sunset"
+          />
         </section>
       </main>
     </>

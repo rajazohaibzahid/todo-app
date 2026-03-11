@@ -37,3 +37,37 @@
 .product section a {
   margin-top: 2rem;
 }
+
+/* --- responsive tweaks --- */
+
+/* tablet / small‑desktop */
+@media (max-width: 1024px) {
+  .product {
+    padding: 2rem 3rem;
+  }
+  .product section {
+    gap: 4rem;
+  }
+  .product h2 {
+    font-size: 3.5rem;
+  }
+}
+
+/* phones */
+@media (max-width: 768px) {
+  .product {
+    padding: 1.5rem 1rem;
+  }
+  .product section {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    width: 100%;
+    margin: 4rem auto;
+  }
+  .product h2 {
+    font-size: 3rem;
+  }
+  .product p {
+    font-size: 1.4rem;
+  }
+}

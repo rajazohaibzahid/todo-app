@@ -1,15 +1,19 @@
 .logo {
-  position: relative; /* allows absolute positioning inside */
+  position: relative;
 
   text-align: center;
   background: linear-gradient(90deg, #0ea5e9, #14b8a6);
   color: #020617;
 
-  font-size: 5rem;
+  font-size: 4.5rem;
   font-weight: 700;
   letter-spacing: 2px;
 
   padding: 2rem 1rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* back button */
@@ -38,26 +42,44 @@
   color: #14b8a6;
 }
 
-/* responsive */
+/* tablet */
 
 @media (max-width: 768px) {
   .logo {
-    font-size: 3.5rem;
+    font-size: 3rem;
+    padding: 1.8rem 1rem;
   }
 
   .backBtn {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     padding: 0.4rem 1rem;
   }
 }
 
+/* mobile */
+
 @media (max-width: 480px) {
   .logo {
-    font-size: 2.8rem;
+    font-size: 2.2rem;
+    padding: 1.5rem 0.8rem;
   }
 
   .backBtn {
-    top: 0.8rem;
-    right: 1rem;
+    top: 0.7rem;
+    right: 0.8rem;
+    font-size: 1rem;
+    padding: 0.35rem 0.8rem;
+  }
+}
+
+/* very small phones */
+
+@media (max-width: 360px) {
+  .logo {
+    font-size: 1.9rem;
+  }
+
+  .backBtn {
+    font-size: 0.9rem;
   }
 }
