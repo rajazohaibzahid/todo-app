@@ -1,0 +1,8 @@
+.stats {
+  background: linear-gradient(90deg, #14b8a6, #0ea5e9);
+  color: #020617;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 2rem 1rem;
+}

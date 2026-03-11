@@ -1,7 +1,9 @@
+import styles from "./Item.module.css";
 export default function Item({ item, onDeleteItems, onToggleItems }) {
   return (
-    <li>
+    <li className={styles.item}>
       <input
+        className={styles.checkbox}
         type="checkbox"
         id={item.id}
         checked={item.packed}
@@ -10,7 +12,12 @@ export default function Item({ item, onDeleteItems, onToggleItems }) {
       <span style={item.packed ? { textDecoration: "line-through" } : {}}>
         {item.quantity} {item.description}{" "}
       </span>
-      <button onClick={() => onDeleteItems(item.id)}>❌</button>{" "}
+      <button
+        className={styles.deleteBtn}
+        onClick={() => onDeleteItems(item.id)}
+      >
+        ❌
+      </button>{" "}
     </li>
   );
 }

@@ -1,7 +1,9 @@
+import styles from "./Stats.module.css";
+
 export default function Stats({ items }) {
   if (items.length === 0)
     return (
-      <footer className="stats">
+      <footer className={styles.stats}>
         <em>Start adding some items to your packing list 🚀</em>
       </footer>
     );
@@ -10,7 +12,7 @@ export default function Stats({ items }) {
   const percentage = Math.round((numPacked / numItems) * 100);
 
   return (
-    <footer className="stats">
+    <footer className={styles.stats}>
       <em>
         {percentage === 100
           ? "You got everything! Ready to go ✈️"

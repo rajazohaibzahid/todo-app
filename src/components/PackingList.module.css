@@ -1,0 +1,145 @@
+/* =====================
+   LIST CONTAINER
+===================== */
+
+.list {
+  background-color: #020617;
+  padding: 3rem 1rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+/* =====================
+   TODO GRID
+===================== */
+
+.list ul {
+  list-style: none;
+
+  width: 90%;
+  max-width: 1200px;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+  gap: 2rem;
+  padding: 0;
+}
+
+/* =====================
+   TODO CARD
+===================== */
+
+.list li {
+  background-color: #0f172a;
+
+  padding: 1.4rem 1.6rem;
+
+  border-radius: 1.2rem;
+  border: 1px solid #1e293b;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 1rem;
+
+  transition: all 0.2s ease;
+}
+
+.list li:hover {
+  transform: translateY(-3px);
+  border-color: #0ea5e9;
+}
+
+/* =====================
+   CHECKBOX
+===================== */
+
+.list li input[type="checkbox"] {
+  width: 1.8rem;
+  height: 1.8rem;
+
+  accent-color: #0ea5e9;
+  cursor: pointer;
+}
+
+/* =====================
+   ITEM TEXT
+===================== */
+
+.list li span {
+  flex: 1;
+  font-size: 1.5rem;
+  color: #e2e8f0;
+}
+
+/* packed item */
+
+.list li span.packed {
+  text-decoration: line-through;
+  color: #64748b;
+}
+
+/* =====================
+   DELETE BUTTON
+===================== */
+
+.list li button {
+  background: none;
+  border: none;
+
+  font-size: 1.8rem;
+  cursor: pointer;
+
+  color: #ef4444;
+
+  transition: 0.2s;
+}
+
+.list li button:hover {
+  color: #f87171;
+}
+
+/* =====================
+   ACTIONS
+===================== */
+
+.actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+/* =====================
+   SELECT + BUTTON STYLE
+===================== */
+
+.actions select,
+.actions button {
+  background-color: #0f172a;
+  color: #f8fafc;
+
+  border: 1px solid #0ea5e9;
+  border-radius: 3rem;
+
+  padding: 0.9rem 1.8rem;
+
+  font-size: 1.4rem;
+  font-weight: 600;
+
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.actions select:hover,
+.actions button:hover {
+  background-color: #0ea5e9;
+  color: #020617;
+}
