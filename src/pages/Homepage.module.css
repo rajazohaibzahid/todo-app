@@ -42,3 +42,12 @@
   color: #e5e7eb;
   max-width: 700px;
 }
+
+span {
+  color: #38bdf8;
+}
+.text {
+  font-size: 2.2rem;
+  color: #e5e7eb;
+  font-style: italic;
+}

@@ -13,12 +13,14 @@ export default function Product() {
             <h2>
               Simple pricing.
               <br />
-              Just $9/month.
+              for a Simple App
             </h2>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae
-              vel labore mollitia iusto. Recusandae quos provident, laboriosam
-              fugit voluptatem iste.
+              Start organizing your trips without any hassle. Our Todo App
+              offers essential features completely free so you can focus on
+              planning your journey instead of managing complicated tools. As
+              the platform evolves, more advanced productivity features may
+              become available.
             </p>
           </div>
           <img

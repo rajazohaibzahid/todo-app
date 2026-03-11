@@ -13,17 +13,15 @@ export default function Product() {
             alt="person with dog overlooking mountain with sunset"
           />
           <div>
-            <h2>About WorldWide.</h2>
+            <h2>Everything You Need to Manage Your Packing List</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo est
-              dicta illum vero culpa cum quaerat architecto sapiente eius non
-              soluta, molestiae nihil laborum, placeat debitis, laboriosam at
-              fuga perspiciatis?
-            </p>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis
-              doloribus libero sunt expedita ratione iusto, magni, id sapiente
-              sequi officiis et.
+              Our Todo App is designed to simplify how you prepare for your
+              trips. Add items to your packing list, manage quantities, and mark
+              tasks as completed when they're packed. The smart sorting feature
+              helps you quickly organize your items so you always know what’s
+              left to prepare. <br />
+              Built with modern web technologies, this app focuses on speed,
+              simplicity, and a seamless user experience.
             </p>
           </div>
         </section>

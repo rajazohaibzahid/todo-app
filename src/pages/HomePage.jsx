@@ -10,15 +10,15 @@ export default function Homepage() {
       <main className={styles.homepage}>
         <section>
           <h1>
-            You travel the world.
-            <br />
-            WorldWise keeps track of your adventures.
+            Stay <span>Organized</span>. Plan <span>Smarter</span>.
           </h1>
           <h2>
-            A world map that tracks your footsteps into every city you can think
-            of. Never forget your wonderful experiences, and show your friends
-            how you have wandered the world.
+            Our Todo App helps you keep track of everything you need for your
+            trips and daily tasks. Quickly add items, manage your packing list,
+            and stay organized wherever you go. With a clean interface and
+            simple controls, planning has never been easier.
           </h2>
+          <p className={styles.text}>“Never forget what to pack again.”</p>
           <Link to="/app" className="cta">
             Get Started
           </Link>

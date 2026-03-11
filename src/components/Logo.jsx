@@ -1,5 +1,15 @@
+import { useNavigate } from "react-router-dom";
 import styles from "./Logo.module.css";
 
 export default function Logo() {
-  return <h1 className={styles.logo}>👜 Todo App 🌴</h1>;
+  const navigate = useNavigate();
+
+  return (
+    <div className={styles.logo}>
+      <button className={styles.backBtn} onClick={() => navigate("/")}>
+        ← Back
+      </button>
+      👜 Todo App 🌴
+    </div>
+  );
 }

@@ -1,4 +1,6 @@
 .logo {
+  position: relative; /* allows absolute positioning inside */
+
   text-align: center;
   background: linear-gradient(90deg, #0ea5e9, #14b8a6);
   color: #020617;
@@ -10,16 +12,52 @@
   padding: 2rem 1rem;
 }
 
+/* back button */
+
+.backBtn {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+
+  background-color: #0f172a;
+  color: #f8fafc;
+
+  border: 1px solid #020617;
+  border-radius: 2rem;
+
+  padding: 0.5rem 1.2rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.backBtn:hover {
+  background-color: #020617;
+  color: #14b8a6;
+}
+
 /* responsive */
 
 @media (max-width: 768px) {
   .logo {
     font-size: 3.5rem;
   }
+
+  .backBtn {
+    font-size: 1.2rem;
+    padding: 0.4rem 1rem;
+  }
 }
 
 @media (max-width: 480px) {
   .logo {
     font-size: 2.8rem;
+  }
+
+  .backBtn {
+    top: 0.8rem;
+    right: 1rem;
   }
 }
