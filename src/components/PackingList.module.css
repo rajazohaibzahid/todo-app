@@ -3,13 +3,16 @@
 ===================== */
 
 .list {
+  flex: 1;
   background-color: #020617;
+
   padding: 3rem 1rem;
 
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 3rem;
+
+  gap: 2.5rem;
 }
 
 /* =====================
@@ -19,14 +22,14 @@
 .list ul {
   list-style: none;
 
-  width: 90%;
-  max-width: 1200px;
+  width: 20%;
+  max-width: 700px;
 
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 
-  gap: 2rem;
-  padding: 0;
+  padding: 1rem;
 }
 
 /* =====================
@@ -113,7 +116,7 @@
   justify-content: center;
   align-items: center;
 
-  gap: 1.5rem;
+  gap: 1rem;
   flex-wrap: wrap;
 }
 

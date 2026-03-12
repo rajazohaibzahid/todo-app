@@ -49,18 +49,14 @@ function AppLayout() {
     <>
       <div className={styles.app}>
         <Logo />
-
-        <main className={styles.container}>
-          <Form onAddItems={handleAddItems} />
-
-          <PackingList
-            items={items}
-            setItems={setItems}
-            onDeleteItems={handleDeleteItems}
-            onToggleItems={handleToggleItems}
-            onClearList={handleClearList}
-          />
-        </main>
+        <Form onAddItems={handleAddItems} />
+        <PackingList
+          items={items}
+          setItems={setItems}
+          onDeleteItems={handleDeleteItems}
+          onToggleItems={handleToggleItems}
+          onClearList={handleClearList}
+        />
 
         <Stats items={items} />
       </div>

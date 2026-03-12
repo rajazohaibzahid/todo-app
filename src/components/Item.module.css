@@ -6,7 +6,6 @@
   border: 1px solid #1e293b;
   display: flex;
   align-items: center;
-  gap: 1rem;
   transition: transform 0.2s ease;
 }
 
@@ -26,6 +25,7 @@
 
   font-size: 1.6rem;
   color: #ef4444;
+  cursor: pointer;
 }
 
 .deleteBtn:hover {
