@@ -9,15 +9,18 @@ export default function Item({ item, onDeleteItems, onToggleItems }) {
         checked={item.packed}
         onChange={() => onToggleItems(item.id)}
       />
-      <span style={item.packed ? { textDecoration: "line-through" } : {}}>
-        {item.quantity} {item.description}{" "}
+      <span
+        className={styles.text}
+        style={item.packed ? { textDecoration: "line-through" } : {}}
+      >
+        {item.quantity} x {item.description}{" "}
       </span>
       <button
         className={styles.deleteBtn}
         onClick={() => onDeleteItems(item.id)}
       >
         ❌
-      </button>{" "}
+      </button>
     </li>
   );
 }

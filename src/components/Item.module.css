@@ -19,6 +19,17 @@
   accent-color: #0ea5e9;
 }
 
+/* text area  */
+
+.text {
+  flex: 1;
+  font-size: 1.5rem;
+  color: #e2e8f0;
+
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}
+
 .deleteBtn {
   background: none;
   border: none;
@@ -26,6 +37,7 @@
   font-size: 1.6rem;
   color: #ef4444;
   cursor: pointer;
+  flex-shrink: 0;
 }
 
 .deleteBtn:hover {
