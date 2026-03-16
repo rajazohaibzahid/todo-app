@@ -70,9 +70,9 @@ export default function Login() {
             </p>
 
             <div className={styles.features}>
+              <p>✔ Access your list anywhere</p>
               <p>✔ Manage your daily tasks</p>
               <p>✔ Track completed todos</p>
-              <p>✔ Access your list anywhere</p>
             </div>
           </div>
         </div>
