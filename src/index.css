@@ -18,6 +18,16 @@
   --color-light--2: #f1f5f9;
   --color-light--3: #e2e8f0;
 }
+html,
+body,
+#root {
+  height: 100%;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+}
 
 * {
   margin: 0;
