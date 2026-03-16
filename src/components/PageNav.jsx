@@ -39,7 +39,7 @@ function PageNav() {
             Products
           </NavLink>
 
-          <NavLink to="/app" className={styles.btn}>
+          <NavLink to="/login" className={styles.btn}>
             Login
           </NavLink>
         </nav>

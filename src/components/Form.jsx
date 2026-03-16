@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { toast } from "react-toastify";
 import styles from "./Form.module.css";
 
 export default function Form({ onAddItems }) {
@@ -8,7 +9,10 @@ export default function Form({ onAddItems }) {
   function handleSubmit(e) {
     e.preventDefault();
 
-    if (!description) return;
+    if (!description) {
+      toast.error("Item description cannot be empty!");
+      return;
+    }
 
     const newItem = {
       description,
