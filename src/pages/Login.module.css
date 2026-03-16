@@ -1,46 +1,87 @@
-.login {
+.auth {
   min-height: calc(100vh - 70px);
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   background: #020617;
 }
 
-/* card */
+/* LEFT SIDE */
+
+.brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  padding: 4rem;
+
+  background: radial-gradient(circle at center, #0ea5e933, transparent);
+}
+
+.brandContent {
+  max-width: 420px;
+}
+
+.brand h1 {
+  font-size: 3.8rem;
+  color: #0ea5e9;
+}
+
+.tagline {
+  margin-top: 12px;
+  font-size: 2.1rem;
+  color: #e2e8f0;
+}
+
+.features {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.8rem;
+  gap: 10px;
+
+  color: #94a3b8;
+}
+
+/* RIGHT SIDE */
+
+.cardWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* CARD */
 
 .card {
+  width: 420px;
+
   background: #0f172a;
   border: 1px solid #1e293b;
 
   padding: 3rem;
   border-radius: 16px;
 
-  width: 420px;
-
-  display: flex;
-  flex-direction: column;
-  gap: 1.8rem;
-
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
 }
 
-/* title */
+/* FORM HEADER */
 
 .title {
   text-align: center;
-  font-size: 2.8rem;
   color: #f8fafc;
+  font-size: 2.8rem;
 }
 
 .subtitle {
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   color: #94a3b8;
+
+  margin-bottom: 25px;
 }
 
-/* form */
+/* FORM */
 
 .form {
   display: flex;
@@ -51,69 +92,92 @@
 .row {
   display: flex;
   flex-direction: column;
-  gap: 0.4rem;
+  gap: 5px;
 }
 
 label {
-  font-size: 1.85rem;
-  color: #cbd5f5;
+  font-size: 1.8rem;
+  color: #94a3b8;
 }
 
-/* inputs */
-
 input {
-  background: #5f6478;
+  background: #020617;
   border: 1px solid #1e293b;
+  font-size: 1.5rem;
 
-  padding: 0.7rem 0.9rem;
+  padding: 10px;
   border-radius: 8px;
 
-  color: #000000;
-  font-size: 1.9rem;
+  color: white;
 }
 
 input:focus {
   outline: none;
   border-color: #0ea5e9;
+  background-color: #020617;
 }
 
-/* button */
+/* PASSWORD */
+
+.passwordField {
+  position: relative;
+}
+
+.eye {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+/* BUTTON */
 
 .btn {
-  margin-top: 0.5rem;
+  margin-top: 10px;
 
   background: #0ea5e9;
   border: none;
 
-  padding: 0.8rem;
-  border-radius: 999px;
-  font-size: 1.9rem;
-  color: #020617;
-  font-weight: 600;
+  padding: 10px;
 
+  border-radius: 999px;
+
+  font-weight: 600;
   cursor: pointer;
-  transition: 0.25s;
+
+  transition: 0.3s;
 }
 
 .btn:hover {
   background: #38bdf8;
-  transform: translateY(-2px);
 }
 
-/* signup link */
+/* SWITCH */
 
-.signupText {
+.switch {
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   color: #94a3b8;
 }
 
-.signupText a {
+.switch a {
   color: #0ea5e9;
   text-decoration: none;
-  font-weight: 600;
 }
 
-.signupText a:hover {
+.switch a:hover {
   text-decoration: underline;
+}
+
+/* MOBILE */
+
+@media (max-width: 900px) {
+  .auth {
+    grid-template-columns: 1fr;
+  }
+
+  .brand {
+    display: none;
+  }
 }

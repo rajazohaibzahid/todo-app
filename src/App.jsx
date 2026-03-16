@@ -2,6 +2,8 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons";
 
 import Homepage from "./pages/HomePage";
 import AppLayout from "./pages/AppLayout";
@@ -24,6 +26,8 @@ export default function App() {
         </Routes>
       </BrowserRouter>
       <ToastContainer position="top-center" autoClose={2000} theme="dark" />
+      <FontAwesomeIcon icon={faEye} />
+      <FontAwesomeIcon icon={faEyeSlash} />
     </div>
   );
 }
