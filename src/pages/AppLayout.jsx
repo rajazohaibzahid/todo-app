@@ -1,5 +1,3 @@
-/* eslint-disable react-hooks/exhaustive-deps */
-/* eslint-disable no-unused-vars */
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Form from "../components/Form";
@@ -61,9 +59,9 @@ function AppLayout() {
   const [modalType, setModalType] = useState(null);
 
   // Save todos to localStorage
-  useEffect(() => {
-    localStorage.setItem("todo-items", JSON.stringify(items));
-  }, [items]);
+  // useEffect(() => {
+  //   localStorage.setItem("todo-items", JSON.stringify(items));
+  // }, [items]);
 
   // Add item
   function handleAddItems(item) {
